@@ -40,6 +40,6 @@ public class LoginPageTest extends FlipkartTestBase{
 	
 	@AfterMethod
 	public void TearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 }

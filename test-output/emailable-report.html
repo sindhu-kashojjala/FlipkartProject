@@ -31,46 +31,87 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">40.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Flipkart Test</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">216.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.flipkart.test.HomePageTest</td><td><a href="#m1"><b>SetUp</b>  </a></td><td class="numi">1</td><td>1615373594815</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.flipkart.test.HomePageTest</td><td><a href="#m2"><b>TearDown</b>  </a></td><td class="numi">1</td><td>1615373635677</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.flipkart.test.HomePageTest</td><td><a href="#m3"><b>SearchProduct</b>  </a></td><td class="numi">1</td><td>1615373635674</td><td class="numi">2</td></tr>
+<tr><th colspan="4">Flipkart Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.flipkart.test.ProductPageTest</td><td><a href="#m1"><b>ProductPageTitle</b>  </a></td><td class="numi">1</td><td>1615544951557</td><td class="numi">18</td></tr>
+<tr class="failedeven"><td rowspan="1">com.flipkart.test.PlaceOrderPageTest</td><td><a href="#m2"><b>OrderProduct</b>  </a></td><td class="numi">1</td><td>1615545002376</td><td class="numi">5652</td></tr>
+<tr><th colspan="4">Flipkart Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.flipkart.test.LoginPageTest</td><td><a href="#m3"><b>CheckLoginPageTitle</b>  </a></td><td class="numi">1</td><td>1615544825828</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m4"><b>Login</b>  </a></td><td class="numi">1</td><td>1615544834656</td><td class="numi">725</td></tr>
+<tr class="passedeven"><td rowspan="3">com.flipkart.test.HomePageTest</td><td><a href="#m5"><b>HomePageTitle</b>  </a></td><td class="numi">1</td><td>1615544847678</td><td class="numi">8</td></tr><tr class="passedeven"><td><a href="#m6"><b>SearchProduct</b>  </a></td><td class="numi">1</td><td>1615544859958</td><td class="numi">216</td></tr><tr class="passedeven"><td><a href="#m7"><b>VerifyUserId</b>  </a></td><td class="numi">1</td><td>1615544875818</td><td class="numi">3896</td></tr>
+<tr class="passedodd"><td rowspan="3">com.flipkart.test.SearchPageTest</td><td><a href="#m8"><b>CheckProductCategory</b>  </a></td><td class="numi">1</td><td>1615544895552</td><td class="numi">6825</td></tr><tr class="passedodd"><td><a href="#m9"><b>LaunchProduct</b>  </a></td><td class="numi">1</td><td>1615544913463</td><td class="numi">7787</td></tr><tr class="passedodd"><td><a href="#m10"><b>SearchPageTitle</b>  </a></td><td class="numi">1</td><td>1615544934652</td><td class="numi">5</td></tr>
+<tr class="passedeven"><td rowspan="1">com.flipkart.test.ProductPageTest</td><td><a href="#m11"><b>PurchaseProduct</b>  </a></td><td class="numi">1</td><td>1615544971274</td><td class="numi">6026</td></tr>
+<tr class="passedodd"><td rowspan="1">com.flipkart.test.PlaceOrderPageTest</td><td><a href="#m12"><b>PaymentPageTitle</b>  </a></td><td class="numi">1</td><td>1615545028839</td><td class="numi">4</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">com.flipkart.test.HomePageTest:SetUp</h2>
+<h1>Flipkart Test</h1>
+<h2 id="m1">com.flipkart.test.PlaceOrderPageTest:OrderProduct</h2>
 <div style="padding-left:3em">
-<p>Cannot locate an element using xpath=(//input[@type=&apos;text&apos;])[2]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<p>element click intercepted: Element &lt;div class=&quot;_2nxZhC&quot;&gt;...&lt;/div&gt; is not clickable at point (584, 693). Other element would receive the click: &lt;div class=&quot;_38X5nw&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VRS9433I&apos;, ip: &apos;192.168.43.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: driver.version: EventFiringWebDriver</p>
-org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dbdb974abba6165b7320f4e74f0a5df</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 <br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 <br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-<br/>at com.sun.proxy.$Proxy7.findElement(Unknown Source)
-<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-<br/>at com.flipkart.pages.LoginPage.Login(LoginPage.java:30)
-<br/>at com.flipkart.test.HomePageTest.SetUp(HomePageTest.java:28)
-<br/>27 lines not shown
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+<br/>at com.sun.proxy.$Proxy12.click(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+<br/>at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy11.click(Unknown Source)
+<br/>at com.flipkart.pages.PlaceOrderPage.ProceedtoPay(PlaceOrderPage.java:48)
+<br/>at com.flipkart.test.PlaceOrderPageTest.OrderProduct(PlaceOrderPageTest.java:56)
+<br/>14 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.flipkart.test.HomePageTest:TearDown</h2>
+<h2 id="m2">com.flipkart.test.ProductPageTest:ProductPageTitle</h2>
+<div style="padding-left:3em">
+<p>Product Page Title is displayed Incorrectly expected [Redmi 9 Prime (Sunrise Flare, 64 GB)- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [mi Redmi 9 Prime ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at com.flipkart.test.ProductPageTest.ProductPageTitle(ProductPageTest.java:44)
+<br/>14 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.flipkart.test.HomePageTest:SearchProduct</h2>
+<h2 id="m3">com.flipkart.test.SearchPageTest:CheckProductCategory</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.flipkart.test.PlaceOrderPageTest:PaymentPageTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.flipkart.test.HomePageTest:VerifyUserId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.flipkart.test.LoginPageTest:CheckLoginPageTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.flipkart.test.SearchPageTest:SearchPageTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.flipkart.test.HomePageTest:HomePageTitle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.flipkart.test.SearchPageTest:LaunchProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.flipkart.test.ProductPageTest:PurchaseProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.flipkart.test.LoginPageTest:Login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.flipkart.test.HomePageTest:SearchProduct</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

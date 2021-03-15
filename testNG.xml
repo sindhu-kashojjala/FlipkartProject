@@ -11,11 +11,9 @@
 		<classes>
 			<class name="com.flipkart.test.LoginPageTest"></class>
  			<class name="com.flipkart.test.HomePageTest"></class>
-			<!-- <class name="com.flipkart.test.HomePageTest"></class>
-			<class name="com.flipkart.test.HomePageTest"></class>
-			<class name="com.flipkart.test.HomePageTest"></class>
-			<class name="com.flipkart.test.HomePageTest"></class>
-			<class name="com.flipkart.test.HomePageTest"></class> -->
+			<class name="com.flipkart.test.SearchPageTest"></class>
+			<class name="com.flipkart.test.ProductPageTest"></class>
+			<class name="com.flipkart.test.PlaceOrderPageTest"></class>
 		</classes>
 	</test>
 </suite>

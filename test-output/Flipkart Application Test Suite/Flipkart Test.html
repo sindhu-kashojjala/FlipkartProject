@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Flipkart Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 10 10:39:59 IST 2021</td>
+<td>Started on:</td><td>Fri Mar 12 15:56:53 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>214 seconds (214182 ms)</td>
+<tr><td>Total time:</td><td>216 seconds (216733 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.flipkart.test.HomePageTest.SearchProduct()'><b>SearchProduct</b><br>Test class: com.flipkart.test.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+<td title='com.flipkart.test.PlaceOrderPageTest.OrderProduct()'><b>OrderProduct</b><br>Test class: com.flipkart.test.PlaceOrderPageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;_2nxZhC&quot;&gt;...&lt;/div&gt; is not clickable at point (584, 693). Other element would receive the click: &lt;div class=&quot;_38X5nw&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VRS9433I&apos;, ip: &apos;192.168.43.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dbdb974abba6165b7320f4e74f0a5df
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -96,21 +95,19 @@ Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.flipkart.pages.HomePage.SearchProduct(HomePage.java:34)
-	at com.flipkart.test.HomePageTest.SearchProduct(HomePageTest.java:50)
+	at com.flipkart.pages.PlaceOrderPage.ProceedtoPay(PlaceOrderPage.java:48)
+	at com.flipkart.test.PlaceOrderPageTest.OrderProduct(PlaceOrderPageTest.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -124,15 +121,14 @@ Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace827365168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace827365168'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+</pre></div><a href='#' onClick='toggleBox("stack-trace506124618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace506124618'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;_2nxZhC&quot;&gt;...&lt;/div&gt; is not clickable at point (584, 693). Other element would receive the click: &lt;div class=&quot;_38X5nw&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=89.0.4389.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-VRS9433I&apos;, ip: &apos;192.168.43.53&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dbdb974abba6165b7320f4e74f0a5df
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -145,21 +141,19 @@ Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.flipkart.pages.HomePage.SearchProduct(HomePage.java:34)
-	at com.flipkart.test.HomePageTest.SearchProduct(HomePageTest.java:50)
+	at com.flipkart.pages.PlaceOrderPage.ProceedtoPay(PlaceOrderPage.java:48)
+	at com.flipkart.test.PlaceOrderPageTest.OrderProduct(PlaceOrderPageTest.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -174,8 +168,52 @@ Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>4</td>
-<td>com.flipkart.test.HomePageTest@10b48321</td></tr>
+<td>5</td>
+<td>com.flipkart.test.PlaceOrderPageTest@49e202ad</td></tr>
+<tr>
+<td title='com.flipkart.test.ProductPageTest.ProductPageTitle()'><b>ProductPageTitle</b><br>Test class: com.flipkart.test.ProductPageTest</td>
+<td><div><pre>java.lang.AssertionError: Product Page Title is displayed Incorrectly expected [Redmi 9 Prime (Sunrise Flare, 64 GB)- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [mi Redmi 9 Prime ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.flipkart.test.ProductPageTest.ProductPageTitle(ProductPageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648489900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648489900'><pre>java.lang.AssertionError: Product Page Title is displayed Incorrectly expected [Redmi 9 Prime (Sunrise Flare, 64 GB)- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [mi Redmi 9 Prime ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.flipkart.test.ProductPageTest.ProductPageTitle(ProductPageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.flipkart.test.ProductPageTest@1372ed45</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -188,22 +226,52 @@ Session ID: fd3cf4717f0d7f24b15d80de4c73ab5e
 <td title='com.flipkart.test.LoginPageTest.CheckLoginPageTitle()'><b>CheckLoginPageTitle</b><br>Test class: com.flipkart.test.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.test.LoginPageTest@120d6fe6</td></tr>
+<td>com.flipkart.test.LoginPageTest@71248c21</td></tr>
+<tr>
+<td title='com.flipkart.test.SearchPageTest.CheckProductCategory()'><b>CheckProductCategory</b><br>Test class: com.flipkart.test.SearchPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.flipkart.test.SearchPageTest@442675e1</td></tr>
 <tr>
 <td title='com.flipkart.test.HomePageTest.HomePageTitle()'><b>HomePageTitle</b><br>Test class: com.flipkart.test.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.test.HomePageTest@10b48321</td></tr>
+<td>com.flipkart.test.HomePageTest@6166e06f</td></tr>
+<tr>
+<td title='com.flipkart.test.SearchPageTest.LaunchProduct()'><b>LaunchProduct</b><br>Test class: com.flipkart.test.SearchPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.flipkart.test.SearchPageTest@442675e1</td></tr>
 <tr>
 <td title='com.flipkart.test.LoginPageTest.Login()'><b>Login</b><br>Test class: com.flipkart.test.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.flipkart.test.LoginPageTest@120d6fe6</td></tr>
+<td>com.flipkart.test.LoginPageTest@71248c21</td></tr>
+<tr>
+<td title='com.flipkart.test.PlaceOrderPageTest.PaymentPageTitle()'><b>PaymentPageTitle</b><br>Test class: com.flipkart.test.PlaceOrderPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.test.PlaceOrderPageTest@49e202ad</td></tr>
+<tr>
+<td title='com.flipkart.test.ProductPageTest.PurchaseProduct()'><b>PurchaseProduct</b><br>Test class: com.flipkart.test.ProductPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.flipkart.test.ProductPageTest@1372ed45</td></tr>
+<tr>
+<td title='com.flipkart.test.SearchPageTest.SearchPageTitle()'><b>SearchPageTitle</b><br>Test class: com.flipkart.test.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.test.SearchPageTest@442675e1</td></tr>
+<tr>
+<td title='com.flipkart.test.HomePageTest.SearchProduct()'><b>SearchProduct</b><br>Test class: com.flipkart.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.flipkart.test.HomePageTest@6166e06f</td></tr>
 <tr>
 <td title='com.flipkart.test.HomePageTest.VerifyUserId()'><b>VerifyUserId</b><br>Test class: com.flipkart.test.HomePageTest</td>
 <td></td>
-<td>20</td>
-<td>com.flipkart.test.HomePageTest@10b48321</td></tr>
+<td>3</td>
+<td>com.flipkart.test.HomePageTest@6166e06f</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" verbose="2" name="Failed suite [Flipkart Application Test Suite]" parallel="methods">
+  <parameter name="appURL" value="https://google.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.flipkart.base.ExtentReportListener"/>
+  </listeners>
+  <test name="Flipkart Test(failed)" parallel="methods">
     <classes>
+      <class name="com.flipkart.test.ProductPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+          <include name="ProductPageTitle"/>
+        </methods>
+      </class> <!-- com.flipkart.test.ProductPageTest -->
+      <class name="com.flipkart.test.LoginPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.flipkart.test.LoginPageTest -->
+      <class name="com.flipkart.test.SearchPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.flipkart.test.SearchPageTest -->
       <class name="com.flipkart.test.HomePageTest">
         <methods>
           <include name="SetUp"/>
-          <include name="SearchProduct"/>
+          <include name="TearDown"/>
         </methods>
       </class> <!-- com.flipkart.test.HomePageTest -->
+      <class name="com.flipkart.test.PlaceOrderPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+          <include name="OrderProduct"/>
+        </methods>
+      </class> <!-- com.flipkart.test.PlaceOrderPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Flipkart Test(failed) -->
+</suite> <!-- Failed suite [Flipkart Application Test Suite] -->

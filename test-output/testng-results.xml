@@ -1,84 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="12" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40885" started-at="2021-03-10T10:53:14Z" finished-at="2021-03-10T10:53:55Z">
+  <suite name="Flipkart Application Test Suite" duration-ms="216733" started-at="2021-03-12T10:26:53Z" finished-at="2021-03-12T10:30:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40885" started-at="2021-03-10T10:53:14Z" finished-at="2021-03-10T10:53:55Z">
-      <class name="com.flipkart.test.HomePageTest">
-        <test-method status="FAIL" signature="SetUp()[pri:0, instance:com.flipkart.test.HomePageTest@2d928643]" name="SetUp" is-config="true" duration-ms="0" started-at="2021-03-10T16:23:14Z" finished-at="2021-03-10T16:23:14Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Flipkart Test" duration-ms="216733" started-at="2021-03-12T10:26:53Z" finished-at="2021-03-12T10:30:29Z">
+      <class name="com.flipkart.test.SearchPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="SetUp" is-config="true" duration-ms="14666" started-at="2021-03-12T15:58:00Z" finished-at="2021-03-12T15:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CheckProductCategory()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="CheckProductCategory" duration-ms="6825" started-at="2021-03-12T15:58:15Z" finished-at="2021-03-12T15:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckProductCategory -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="TearDown" is-config="true" duration-ms="610" started-at="2021-03-12T15:58:22Z" finished-at="2021-03-12T15:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="SetUp" is-config="true" duration-ms="10104" started-at="2021-03-12T15:58:23Z" finished-at="2021-03-12T15:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchProduct()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="LaunchProduct" duration-ms="7787" started-at="2021-03-12T15:58:33Z" finished-at="2021-03-12T15:58:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchProduct -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="TearDown" is-config="true" duration-ms="610" started-at="2021-03-12T15:58:41Z" finished-at="2021-03-12T15:58:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="SetUp" is-config="true" duration-ms="12378" started-at="2021-03-12T15:58:42Z" finished-at="2021-03-12T15:58:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="SearchPageTitle()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="SearchPageTitle" duration-ms="5" started-at="2021-03-12T15:58:54Z" finished-at="2021-03-12T15:58:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.SearchPageTest@442675e1]" name="TearDown" is-config="true" duration-ms="610" started-at="2021-03-12T15:58:55Z" finished-at="2021-03-12T15:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.flipkart.test.SearchPageTest -->
+      <class name="com.flipkart.test.PlaceOrderPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="SetUp" is-config="true" duration-ms="24015" started-at="2021-03-12T15:59:38Z" finished-at="2021-03-12T16:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="OrderProduct()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="OrderProduct" duration-ms="5652" started-at="2021-03-12T16:00:02Z" finished-at="2021-03-12T16:00:08Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot locate an element using xpath=(//input[@type='text'])[2]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element click intercepted: Element <div class="_2nxZhC">...</div> is not clickable at point (584, 693). Other element would receive the click: <div class="_38X5nw">...</div>
+  (Session info: chrome=89.0.4389.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-VRS9433I', ip: '192.168.43.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: driver.version: EventFiringWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dbdb974abba6165b7320f4e74f0a5df]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=(//input[@type='text'])[2]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="_2nxZhC">...</div> is not clickable at point (584, 693). Other element would receive the click: <div class="_38X5nw">...</div>
+  (Session info: chrome=89.0.4389.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-VRS9433I', ip: '192.168.43.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: driver.version: EventFiringWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SINDHU\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dbdb974abba6165b7320f4e74f0a5df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at com.flipkart.pages.LoginPage.Login(LoginPage.java:30)
-	at com.flipkart.test.HomePageTest.SetUp(HomePageTest.java:28)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.flipkart.pages.PlaceOrderPage.ProceedtoPay(PlaceOrderPage.java:48)
+	at com.flipkart.test.PlaceOrderPageTest.OrderProduct(PlaceOrderPageTest.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderProduct -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="TearDown" is-config="true" duration-ms="642" started-at="2021-03-12T16:00:08Z" finished-at="2021-03-12T16:00:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="SetUp" is-config="true" duration-ms="19743" started-at="2021-03-12T16:00:09Z" finished-at="2021-03-12T16:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="SKIP" signature="SearchProduct()[pri:0, instance:com.flipkart.test.HomePageTest@2d928643]" name="SearchProduct" duration-ms="2" started-at="2021-03-10T16:23:55Z" finished-at="2021-03-10T16:23:55Z">
+        <test-method status="PASS" signature="PaymentPageTitle()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="PaymentPageTitle" duration-ms="4" started-at="2021-03-12T16:00:28Z" finished-at="2021-03-12T16:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.PlaceOrderPageTest@49e202ad]" name="TearDown" is-config="true" duration-ms="629" started-at="2021-03-12T16:00:29Z" finished-at="2021-03-12T16:00:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.flipkart.test.PlaceOrderPageTest -->
+      <class name="com.flipkart.test.ProductPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="SetUp" is-config="true" duration-ms="15831" started-at="2021-03-12T15:58:55Z" finished-at="2021-03-12T15:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="ProductPageTitle()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="ProductPageTitle" duration-ms="18" started-at="2021-03-12T15:59:11Z" finished-at="2021-03-12T15:59:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product Page Title is displayed Incorrectly expected [Redmi 9 Prime (Sunrise Flare, 64 GB)- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [mi Redmi 9 Prime ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product Page Title is displayed Incorrectly expected [Redmi 9 Prime (Sunrise Flare, 64 GB)- Buy Products Online at Best Price in India - All Categories | Flipkart.com] but found [mi Redmi 9 Prime ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.flipkart.test.ProductPageTest.ProductPageTitle(ProductPageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="TearDown" is-config="true" duration-ms="648" started-at="2021-03-12T15:59:11Z" finished-at="2021-03-12T15:59:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="SetUp" is-config="true" duration-ms="18670" started-at="2021-03-12T15:59:12Z" finished-at="2021-03-12T15:59:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="PurchaseProduct()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="PurchaseProduct" duration-ms="6026" started-at="2021-03-12T15:59:31Z" finished-at="2021-03-12T15:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PurchaseProduct -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.ProductPageTest@1372ed45]" name="TearDown" is-config="true" duration-ms="644" started-at="2021-03-12T15:59:37Z" finished-at="2021-03-12T15:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.flipkart.test.ProductPageTest -->
+      <class name="com.flipkart.test.HomePageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="SetUp" is-config="true" duration-ms="11286" started-at="2021-03-12T15:57:16Z" finished-at="2021-03-12T15:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="HomePageTitle()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="HomePageTitle" duration-ms="8" started-at="2021-03-12T15:57:27Z" finished-at="2021-03-12T15:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="TearDown" is-config="true" duration-ms="607" started-at="2021-03-12T15:57:28Z" finished-at="2021-03-12T15:57:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="SetUp" is-config="true" duration-ms="11251" started-at="2021-03-12T15:57:28Z" finished-at="2021-03-12T15:57:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="SearchProduct" duration-ms="216" started-at="2021-03-12T15:57:39Z" finished-at="2021-03-12T15:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProduct -->
-        <test-method status="SKIP" signature="TearDown()[pri:0, instance:com.flipkart.test.HomePageTest@2d928643]" name="TearDown" is-config="true" duration-ms="0" started-at="2021-03-10T16:23:55Z" finished-at="2021-03-10T16:23:55Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="TearDown" is-config="true" duration-ms="607" started-at="2021-03-12T15:57:40Z" finished-at="2021-03-12T15:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="SetUp" is-config="true" duration-ms="14591" started-at="2021-03-12T15:57:41Z" finished-at="2021-03-12T15:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="VerifyUserId()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="VerifyUserId" duration-ms="3896" started-at="2021-03-12T15:57:55Z" finished-at="2021-03-12T15:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserId -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.HomePageTest@6166e06f]" name="TearDown" is-config="true" duration-ms="611" started-at="2021-03-12T15:58:00Z" finished-at="2021-03-12T15:58:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.flipkart.test.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.flipkart.test.LoginPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="SetUp" is-config="true" duration-ms="12667" started-at="2021-03-12T15:56:53Z" finished-at="2021-03-12T15:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CheckLoginPageTitle()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="CheckLoginPageTitle" duration-ms="17" started-at="2021-03-12T15:57:05Z" finished-at="2021-03-12T15:57:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckLoginPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="TearDown" is-config="true" duration-ms="607" started-at="2021-03-12T15:57:06Z" finished-at="2021-03-12T15:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="SetUp" is-config="true" duration-ms="7669" started-at="2021-03-12T15:57:06Z" finished-at="2021-03-12T15:57:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="Login" duration-ms="725" started-at="2021-03-12T15:57:14Z" finished-at="2021-03-12T15:57:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.flipkart.test.LoginPageTest@71248c21]" name="TearDown" is-config="true" duration-ms="594" started-at="2021-03-12T15:57:15Z" finished-at="2021-03-12T15:57:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.flipkart.test.LoginPageTest -->
+    </test> <!-- Flipkart Test -->
+  </suite> <!-- Flipkart Application Test Suite -->
 </testng-results>

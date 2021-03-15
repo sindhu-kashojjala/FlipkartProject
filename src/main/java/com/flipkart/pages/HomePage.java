@@ -1,5 +1,6 @@
 package com.flipkart.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -31,8 +32,8 @@ public class HomePage extends FlipkartTestBase{
 	
 	public SearchPage SearchProduct(String product) {
 		SearchBox.sendKeys(product);
-		SearchBtn.click();
+		SearchBox.sendKeys(Keys.ENTER);
+		//SearchBtn.click();
 		return new SearchPage();
 	}
-
 }

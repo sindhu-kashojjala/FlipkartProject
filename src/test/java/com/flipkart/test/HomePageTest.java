@@ -52,7 +52,7 @@ public class HomePageTest extends FlipkartTestBase{
 	
 	@AfterMethod
 	public void TearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 }

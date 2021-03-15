@@ -8,19 +8,38 @@
   </listeners>
   <test name="Flipkart Test(failed)" parallel="methods">
     <classes>
+      <class name="com.flipkart.test.ProductPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+          <include name="ProductPageTitle"/>
+        </methods>
+      </class> <!-- com.flipkart.test.ProductPageTest -->
       <class name="com.flipkart.test.LoginPageTest">
         <methods>
           <include name="SetUp"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.flipkart.test.LoginPageTest -->
+      <class name="com.flipkart.test.SearchPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.flipkart.test.SearchPageTest -->
       <class name="com.flipkart.test.HomePageTest">
         <methods>
           <include name="SetUp"/>
-          <include name="SearchProduct"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.flipkart.test.HomePageTest -->
+      <class name="com.flipkart.test.PlaceOrderPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+          <include name="OrderProduct"/>
+        </methods>
+      </class> <!-- com.flipkart.test.PlaceOrderPageTest -->
     </classes>
   </test> <!-- Flipkart Test(failed) -->
 </suite> <!-- Failed suite [Flipkart Application Test Suite] -->
