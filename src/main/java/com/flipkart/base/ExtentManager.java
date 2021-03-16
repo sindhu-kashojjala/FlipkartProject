@@ -10,9 +10,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentManager {
 	
 
-	 public static ExtentReports extent;
-	 public static String reportFileName = "Extent-Report"+".html";
-	 public static String fileSeperator = System.getProperty("file.separator");
+	public static ExtentReports extent;
+	public static String reportFileName = "Extent-Report"+".html";
+	public static String fileSeperator = System.getProperty("file.separator");
     public static String reportFilepath = System.getProperty("user.dir") +fileSeperator+ "TestReport";
     public static String screenshotFilePath = reportFilepath +fileSeperator+ "Screenshots";
     public static String reportFileLocation =  reportFilepath +fileSeperator+ reportFileName;
